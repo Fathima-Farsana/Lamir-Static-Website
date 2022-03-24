@@ -120,7 +120,7 @@ Author URL: http://w3layouts.com
                     </div>
                 </div>
                 <div class="contact-right">
-                    <form  id="gform" action="https://script.google.com/macros/s/AKfycbzLguoRiqSY_BwFMtpC2uqOHmwrUcMdeljw0Hny3DEA1RCRFcbhXUxPuvYm9StgTgUVVA/exec" method="POST" class="signin-form">
+                    <form  id="submit-form" action="">
                         <div class="input-grids">
                             <input type="text" name="w3lName" id="w3lName" placeholder="Your Name*"
                                 class="contact-input" />
@@ -462,7 +462,7 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJdQmOKAl0pjsRxYji0
         $("#submit-form").submit((e)=>{
             e.preventDefault()
             $.ajax({
-                url:"",
+                url:"https://script.google.com/macros/s/AKfycbzLguoRiqSY_BwFMtpC2uqOHmwrUcMdeljw0Hny3DEA1RCRFcbhXUxPuvYm9StgTgUVVA/exec" method="POST" class="signin-form",
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
